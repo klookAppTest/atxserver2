@@ -64,7 +64,7 @@ class="container-fluid"
                     <el-button size="mini" disabled>设备离线</el-button>
                 </template>
                 <template v-else-if='"colding" == scope.row.status'>
-                    <el-button disabled :loading="true" size="mini" type="primary">释放中</span>
+                    <el-button disabled :loading="true" size="mini" type="primary">释放中</el-button>
                 </template>
                 <template v-else-if='"busy" == scope.row.status'>
                     <el-button :title="scope.row.userId" style="cursor: not-allowed; background: #f3d19e" size="mini"
@@ -79,9 +79,7 @@ class="container-fluid"
                 </template>
                 <template v-else>
                     <a :href='"/devices/"+scope.row.udid+"/remotecontrol"' target="_blank">
-                        <el-button size="mini" type="primary">
-                            点击使用
-                        </el-button>
+                        <el-button size="mini" type="primary" plain>点击使用</el-button>
                     </a>
                 </template>
             </template>

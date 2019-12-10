@@ -1,9 +1,5 @@
 ## atxserver2
-移动设备管理平台(支持Android和iOS), 欢迎加入QQ群交流
-
-![image-20190619180012756](docs/qq.png)
-
-![img](static/favicon-dark.png)
+基于开源 [atxserver2](https://github.com/openatx/atxserver2) 项目定制化开发。
 
 ## 部署方案1 （docker-compose方式）
 代码Clone到本地
@@ -63,7 +59,7 @@ python3 main.py
 
 启动之后，浏览器打开 <http://localhost:4000>，完成认证之后就可以顺利的看到设备列表页了。不过目前还是空的，什么都没有。
 
-![image](https://user-images.githubusercontent.com/3281689/54806497-1a90ce80-4cb5-11e9-84c5-bbb4f427cbd5.png)
+![](./img/atx_server1.png)
 
 **Step 3: Android设备接入**
 
@@ -83,7 +79,7 @@ docker run --rm --privileged -v /dev/bus/usb:/dev/bus/usb --net host \
 该镜像会把所有必要的资源 （atx-uiautomator.apk, minicap, minitouch, atx-agent) 全部推送到手机上。
 一切就绪后，你可以进行远程真机的操作了。
 
-![atxserver2-remotecontrol](https://user-images.githubusercontent.com/3281689/54807405-187c3f00-4cb8-11e9-8a8e-8092c5472dc1.gif)
+![](./img/atx_server2.png)
 
 **Step 3: iOS设备接入**
 
@@ -140,18 +136,13 @@ Examples:
 - [Install app and run uiautomator2 test](examples/android_test.py)
 
 ## Thanks
+- <https://github.com/openatx/atxserver2> ✨✨
 - <https://github.com/openstf>
 - <https://github.com/Genymobile/scrcpy>
 - [https://www.easyicon.net](https://www.easyicon.net/iconsearch/hub/)
 - <https://github.com/mikusjelly/apkutils>
 - <https://github.com/gtsystem/python-remotezip>
 - <https://github.com/willerce/WhatsInput>
-
-## 微信打赏
-以前我一直对打赏这种行为不屑一顾，但真正的收到社区成员千翻百计找到我的打赏码打赏的时候还是很开心，感觉工作得到的人认可，很开心。我也有时候会打赏别人，让激动的心情有了发泄的出口。
-请不要打赏太多，知道了你们的心意就好了。我将会用收到的money通通拿来去楼下咖啡店买咖啡，买饮料。^_^
-
-![wechat](docs/wechat_qrcode.jpg)
 
 ## LICENSE
 [MIT](LICENSE)
